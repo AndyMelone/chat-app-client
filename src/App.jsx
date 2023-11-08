@@ -5,10 +5,13 @@ import Login from './pages/Login'
 import Chat from './pages/Chat'
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Container } from "react-bootstrap"
+import NavBar from './components/NavBar'
+
 
 function App() {
 
   return (
+    <><NavBar />
     <Container>
       <Routes>
         <Route path="/" element={<Chat />} />
@@ -16,7 +19,8 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-    </Container>
+    </Container></>
+
   )
 }
 
