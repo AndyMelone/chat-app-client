@@ -11,7 +11,7 @@ const NavBar = () => {
             ChatApp{" "}
           </Link>
         </h2>
-        <span className="text-warning"> Logged in as Charles</span>
+        <span className="text-warning"> Logged in as Melone</span>
         <Nav>
           <Stack direction="horizontal">
             <Link to="/login" className="link-light text-decoration-none mx-4">
