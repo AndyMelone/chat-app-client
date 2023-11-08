@@ -3,18 +3,20 @@ import { Routes, Route , Navigate } from "react-router-dom"
 import Register from './pages/Register'
 import Login from './pages/Login'
 import Chat from './pages/Chat'
+import "bootstrap/dist/css/bootstrap.min.css"
+import { Container } from "react-bootstrap"
 
 function App() {
 
   return (
-    <>
+    <Container>
       <Routes>
         <Route path="/" element={<Chat />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-    </>
+    </Container>
   )
 }
 
